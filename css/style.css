@@ -204,3 +204,56 @@ body {
 .top__link + .top__link {
   margin-left: 20px;
 }
+
+.rent {
+  margin-bottom: 200px;
+  padding-top: 100px;
+}
+
+.rent__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rent__content {
+  width: 300px;
+}
+
+.rent__title {
+  font-family: "Fira Sans";
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.rent__text + .rent__text {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.rent__item {
+  /* width: 250px;
+  height: 350px; */
+  border: 1px solid #332208;
+  text-align: center;
+  padding: 0 30px 10px;
+}
+
+.rent__item-number {
+  font-family: "Fira Sans";
+  font-size: 96px;
+  font-weight: 500;
+  line-height: 1.3;
+  opacity: 0.05;
+}
+
+.rent__item-title {
+  font-family: "Fira Sans";
+  font-size: 18px;
+  margin-bottom: 35px;
+  width: 175px;
+}
+
+.rent__item-text {
+  max-width: 175px;
+}
