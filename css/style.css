@@ -343,3 +343,44 @@ body {
   top: 12px;
   left: 34px;
 }
+
+.reviews {
+  padding: 100px 0;
+  background-color: #332208;
+  color: #fefefe;
+}
+
+.reviews__title {
+  font-family: "Fira Sans";
+  font-size: 24px;
+  margin-bottom: 70px;
+}
+
+.reviews__slider {
+  display: flex;
+  justify-content: space-between;
+  /* gap: 20px; */
+}
+
+.reviews__item {
+  padding: 45px 30px;
+  border: 1px solid #c5ac2d;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 270px;
+  min-height: 300px;
+  margin-right: 30px;
+}
+
+.reviews__item-name {
+  font-family: "Fira Sans";
+  font-size: 24px;
+  margin-bottom: 50px;
+  font-weight: 500;
+}
+
+.reviews__slider .slick-dots button {
+  background-color: #c5ac2d;
+}
