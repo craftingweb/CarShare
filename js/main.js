@@ -3,6 +3,14 @@ $(function () {
     arrows: false,
     dots: true,
     fade: true,
+    responsive: [
+      {
+        breakpoint: 1220,
+        settings: {
+          dots: false,
+        },
+      },
+    ],
   });
 
   $(".reviews__slider").slick({
