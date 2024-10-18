@@ -7,6 +7,7 @@
 .container {
   max-width: 1220px;
   margin: 0 auto;
+  padding: 0 10px;
 }
 
 a {
@@ -35,6 +36,10 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.menu__btn {
+  display: none;
 }
 
 .menu__list {
@@ -444,4 +449,54 @@ body {
 .footer__app-btn {
   padding: 10px 15px;
   border-radius: 5px;
+}
+
+@media (max-width: 850px) {
+  .menu {
+    order: 1;
+  }
+  .menu__list {
+    display: block;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #332208;
+    transform: translateY(-500px);
+  }
+
+  .menu__list--active {
+    transform: translateY(0);
+  }
+
+  .menu__item {
+    padding-bottom: 20px;
+  }
+  .menu__btn {
+    display: block;
+    border: none;
+    height: 30px;
+    width: 40px;
+    cursor: pointer;
+    background-color: transparent;
+    border-top: 2px solid #fefefe;
+    border-bottom: 2px solid #fefefe;
+    position: relative;
+  }
+
+  .menu__btn::after {
+    content: "";
+    position: absolute;
+    background-color: #fefefe;
+    height: 2px;
+    width: 100%;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .logo__link {
+    padding: 20px 0;
+  }
 }
